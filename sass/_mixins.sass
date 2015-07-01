@@ -1,0 +1,94 @@
+=at-media($media, $width: 0)
+  @if $media == ipad-landscape
+    @media only screen and (min-width : 1024px) and (max-width: 1200px)
+      @content
+  @else if $media == ipad-portrait
+    @media only screen and (min-width : 768px) and (max-width : 1023px)
+      @content
+  @else if $media == iphone-landscape
+    @media only screen and (min-width : 480px) and (max-width: 767px)
+      @content
+  @else if $media == iphone-portrait
+    @media only screen and (max-width: 568px)
+      @content
+  @else if $media == less-than-ipad-landscape
+    @media only screen and (max-width : 1023px)
+      @content
+  @else if $media == less-than-ipad-portrait
+    @media only screen and (max-width: 767px)
+      @content
+  @else if $media == less-than-iphone-landscape
+    @media only screen and (max-width: 567px)
+      @content
+  @else if $media == less-than-iphone-portrait
+    @media only screen and (max-width: 319px)
+      @content
+  @else if $media == ipad-landscape-and-smaller
+    @media only screen and (max-width: 1024px)
+      @content
+  @else if $media == ipad-portrait-and-smaller
+    @media only screen and (max-width : 768px)
+      @content
+  @else if $media == iphone-landscape-and-smaller
+    @media only screen and (max-width : 568px)
+      @content
+  @else if $media == iphone-portrait-and-smaller
+    @media only screen and (max-width: 320px)
+      @content
+  @else if $media == becomes-navbar
+    @media only screen and (max-width: 735px)
+      @content
+  @else if $media == max
+    @media only screen and (max-width: $width)
+      @content
+  @else if $media == min
+    @media only screen and (min-width: $width)
+      @content
+  @else if $media == less-than-md
+    @media only screen and (max-width: $screen-md-min)
+      @content
+  @else if $media == less-than-sm
+    @media only screen and (max-width: $screen-sm-min)
+      @content
+  @else if $media == less-than-xs
+    @media only screen and (max-width: $screen-xs-min)
+      @content
+  @else if $media == more-than-xxs
+    @media only screen and (min-width: $screen-xs-min)
+      @content
+  @else if $media == becomes-navbar
+    @media only screen and (max-width: 735px)
+      @content
+  @else if $media == max
+    @media only screen and (max-width: $width)
+      @content
+  @else if $media == min
+    @media only screen and (min-width: $width)
+      @content
+  @else if $media == lg
+    @media only screen and (min-width: 1200px)
+      @content
+  @else if $media == md
+    @media only screen and (min-width: 992px) and (max-width: 1199px)
+      @content
+  @else if $media == sm
+    @media only screen and (min-width: 768px) and (max-width: 991px)
+      @content
+  @else if $media == xs
+    @media only screen and (min-width: 480px) and (max-width: 767px)
+      @content
+  @else if $media == xxs
+    @media only screen and (max-width: 479px)
+      @content
+
+=animate($animation, $speed, $delay: 0s, $ease: ease-out)
+  -webkit-animation-duration: $speed
+  animation-duration: $speed
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+  -webkit-animation-name: $animation
+  animation-name: $animation
+  animation-delay: $delay
+  -webkit-animation-delay: $delay
+  animation-timing-function: $ease
+  -webkit-animation-timing-function: $ease
