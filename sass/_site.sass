@@ -41,9 +41,9 @@ h2
     font-size: 30px
 
 h3
-  font-size: 30px
+  font-size: 34px
   +at-media(less-than-sm)
-    font-size: 22px
+    font-size: 26px
 
 h4
   font-size: 24px
@@ -97,14 +97,17 @@ section
     color: white
   &.section-4
     background: #48E4C5
-    h4
-      margin-top: 1em
+    h3
+      line-height: 1
+      margin-top: 40px
+      span.small
+        font-size: 50%
+        font-weight: 100
+        color: inherit
   &.section-5
     background: #CADEDA
-    h2
-      text-align: center
+    text-align: center
     .icons
-      text-align: center
       margin-top: 50px
       a
         display: inline-block
@@ -114,6 +117,7 @@ section
         background-color: rgba(255,255,255,0.1)
         background-size: 100%
         background-position: center center
+        background-repeat: no-repeat
         opacity: 0.3
         +at-media(less-than-sm)
           width: 64px
