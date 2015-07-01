@@ -13,16 +13,18 @@
   <!--
     <a href="#" class="btn btn-link btn-lg" id="slide-down"><span class="glyphicon glyphicon-chevron-down"></span></a>
   -->
-  <a href="#" id="slide-down"></a>
+  <a href="#" class="hidden-xs" id="slide-down"></a>
 
   <section class="section-1">
     <div class="container">
       <div class="row">
-        <h1>Emil<br />Rosendahl</h1>
-        <figure>
-          <img src="images/profile.jpg" />
-          <figcaption>This is me in fake glasses</figcaption>
-        </figure>
+        <div class="col-xs-12">
+          <h1 class="hidden-xs">Emil<br />Rosendahl</h1>
+          <h1 class="visible-xs">Emil Rosendahl</h1>
+          <figure>
+            <img src="images/profile.jpg" />
+          </figure>
+        </div>
       </div>
     </div>
   </section>
@@ -54,7 +56,7 @@
 
       <h2>Things I'm really good at</h2>
 
-      <p class="small">Techniques that I have used a lot in my previous work and that I feel really comfortable with</p>
+      <p>Techniques that I have used a lot in my previous work and that I feel really comfortable with</p>
 
       <div class="row bars first-bars">
         <div class="bar col-sm-6">
@@ -112,7 +114,7 @@
 
       <h3>Things that I'm pretty good at</h3>
 
-      <p class="small">Techniques that I have used a lot in my previous work but not to the same extent as above</p>
+      <p>Techniques that I have used a lot in my previous work but not to the same extent as above</p>
 
       <div class="row bars second-bars">
         <div class="bar col-sm-6">
@@ -190,15 +192,42 @@
   <section class="section-4">
     <div class="container">
       <h2>Work, experience and education</h2>
-      <h4>2012 &mdash; present</h4>
-      <p>Senior developer at GoBrave</p>
-      <h4>2010 &mdash; 2011</h4>
-      <p>Web developer at Smelink AB</p>
-      <h4>2009 &mdash; 2010</h4>
-      <p>Teacher in network technologies and programming at John Bauer Gymnasiet</p>
-      <h4>2006 &mdash; 2009</h4>
-      <p>Bachelor education in Software Engineering at Blekinge Institute of Technology (BTH) in Ronneby</p>
-      <h4>2003 &mdash; 2006</h4>
+      <h3>2012 &mdash; present</h3>
+      <p>
+        <strong>Tech Lead at GoBrave</strong>
+      </p>
+      <p>
+        In this role I have had the final say in technical decisions and have been involved in the planning of the
+        more technically demanding projects, from the very first meeting with the customer and all the way to the finish line. 
+      </p>
+      <!--
+      <h4>Customer projects</h4>
+      <ul>
+        <li>A tool to generate quotations from Visma. The new good looking quotations bumped the hit rate from ~20 % to ~45 %</li>
+        <li>A web order system for resellers of toys, integrated with the customers order system. This solution lowered thier cost of one employee</li>
+        <li>A tool to customize and order your kitchen-sink. Integrated with the customers order system and production chain.</li>
+      </ul>
+      -->
+
+      <h3>2010 &mdash; 2011</h3>
+      <p>
+        <strong>Web developer at Smelink AB</strong>
+      </p>
+      <p>
+        Smelink is a big application that hosts 5000+ websites. I was part of a team that did a big re-write of the system, migrating 
+        to a kind-of Active Record pattern and threw out lots of old spagetti-code.
+      </p>
+      <h3>2009 &mdash; 2010</h3>
+      <p>
+        I worked as a teacher in network technologies and programming at John Bauer Gymnasiet.
+      </p>
+      <h3>2006 &mdash; 2009</h3>
+      <p>
+        Bachelor level education in Software Engineering at Blekinge Institute of Technology (BTH). It was a very broad 
+        engineering program with lots of courses in programming, methodologies and project planning.
+      </p>
+
+      <h3>2003 &mdash; 2006</h3>
       <p>High school education in Information technologies and programming</p>
     </div>
   </section>
@@ -206,9 +235,13 @@
   <section class="section-5">
     <div class="container">
       <h2>Get in touch with me!</h2>
-      @doctordesh at Twitter
-      doctordesh at Github
-      emil.o.rosendahl@gmail.com
+      <div class="row">
+        <div class="col-xs-12 icons">
+          <a class="icon-twitter" target="_blank" href="https://twitter.com/doctordesh"></a>
+          <a class="icon-github" target="_blank" href="https://github.com/doctordesh"></a>
+          <a class="icon-email" target="_blank" href="mailto:emil.o.rosendahl@gmail.com?subject=Dear%20Mr%20Ninja&amp;body=Greetings!%20Im%20in%20need%20of%20your%20services..."></a>
+        </div>
+      </div>
     </div>
   </section>
 
